@@ -1,0 +1,299 @@
+*{
+    border: none;
+    box-sizing: border-box;
+    font-size: 100;
+    margin: 0px;
+    outline: none;
+    padding: 0px;
+}
+
+ul, ol
+{
+    list-style: none;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+
+ /*General ______________________________________________*/
+
+:root
+{  
+    --gray1: #dedede;
+    --gray2: #f3f3f3;
+    --gray3: #534e52;
+    --gray4: #989792;
+    --gray5: #fff;
+    --orange: #dc5130;
+    --consult: #3a8abb;
+    --formaci: #6bc8cd;
+    --analisis: #f0b14a;
+    --investi: #d9453b;
+
+    
+    --h1: 90px;
+    --h3: 50px;
+}
+
+.container
+{
+    margin: 0px auto;
+    max-width: 1080px;
+    padding: 20px;
+    width: 100%,
+}
+
+
+body
+{
+    background-color: var(--gray2);
+}
+
+
+
+ /*Header ______________________________________________*/
+
+
+
+.col-4 img
+{
+    max-width: 50%;
+}
+
+.articule div
+{
+    background-color: var(--gray3);
+}
+
+header
+{
+    border-bottom: 1px solid var(--gray1);
+    padding-bottom: 35px;
+}
+
+header::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header .log, header nav
+{
+    float: left;
+    width: 50%;
+}
+
+.log img
+{
+    width: 70%;
+    height: 50px;
+}
+
+
+header nav ul::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header nav ul li
+{
+    float: right;
+}
+
+header nav
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+}
+
+header nav a
+{
+    color: var(--gray4);
+    padding: 5px 10px;
+}
+
+header nav a:hover
+{
+    background-color: #dc5130;
+    color: var(--gray2);
+}
+
+
+/*main______________________________________________*/
+
+
+
+.col-4 img
+{
+    max-width: 100%;
+    height: 250px;
+}
+
+article div
+{
+    background-color: var(--gray5);
+}
+
+article div h2
+{
+    font-size: 30px;
+    border-bottom: 1px solid var(--gray1);
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70%;
+}
+
+article div p
+{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    color: var(--gray4);
+}
+
+.higlight
+{
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 35px;
+    border-bottom: 1px solid var(--gray1);
+}
+
+h1
+{
+    color: #534e52;
+    font-size: var(--h1);
+}
+
+.higlight h2
+{
+    color: var(--gray4);
+    font-size: 50px;
+}
+
+
+main
+{
+    border-bottom: 1px solid var(--gray1);
+    padding-bottom: 35px;
+}
+
+.col-4
+{
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+}
+
+.col-3
+{
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+}
+
+.img-card
+{
+    background: transparent url("https://st4.depositphotos.com/18833234/i/600/depositphotos_209024690-stock-photo-two-businessman-shaking-hands-handshake.jpg") no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.formacion .img-card
+{
+    background-image: url("https://www.ecoticias.com/wp-content/uploads/2022/01/146-8.jpg");
+}
+
+.Analisis .img-card
+{
+    background-image: url("https://www.anahuac.mx/generacion-anahuac/sites/default/files/articles/GA_imagenes-blog_2_0.png");
+}
+
+.Investigacion .img-card
+{
+    background-image: url("https://www.questionpro.com/blog/wp-content/uploads/2019/01/895-768x512.jpg");
+}
+
+.bienvenido h2
+{
+    border-color: 1px solid var(--gray4);
+}
+
+span, li
+{
+    color: var(--investi);
+}
+
+.consultoria h2
+{
+    color: var(--consult);
+}
+
+.Formacion h2
+{
+    color: var(--formaci);
+}
+
+.Analisis h2
+{
+    color: var(--analisis);
+}
+
+.Investigacion h2
+{
+    color: var(--investi);
+}
+
+p
+{
+    line-height: 30px;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    color: var(--gray4);
+}
+
+
+.col-3 h2
+{
+    font-size: 38px;
+    color: var(--gray3);
+    border-bottom: 1px solid var(--gray1);
+}
+
+h3
+{
+    line-height: 10px;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: var(--gray3);
+}
+
+ul, li
+{
+    list-style: none;
+}
+
+li
+{
+    line-height: 30px;
+    font-size: 20px;
+    padding-top: 20px;
+    color: var(--investi);
+    list-style: circle;
+    margin-left: 20px;
+}
+
